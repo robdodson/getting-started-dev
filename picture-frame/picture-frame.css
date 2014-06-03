@@ -1,0 +1,26 @@
+:host {
+  display: inline-block;
+}
+:host([border]) {
+  padding: 5px;
+  border: 1px solid silver;
+}
+:host([round]),
+:host([round]) ::content img,
+:host([round]) ::content * /deep/ img {
+  border-radius: 50%;
+}
+::content img,
+::content * /deep/ img {
+  display: block;
+}
+:host([shadow="bottom"]) {
+  -moz-box-shadow:    0 4px 9px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 4px 9px rgba(0,0,0,0.5);
+  box-shadow:         0 4px 9px rgba(0,0,0,0.5);
+}
+:host([shadow="top"]) {
+  -moz-box-shadow:    0 -4px 9px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 -4px 9px rgba(0,0,0,0.5);
+  box-shadow:         0 -4px 9px rgba(0,0,0,0.5);
+}

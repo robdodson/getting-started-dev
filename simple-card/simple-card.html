@@ -1,0 +1,23 @@
+<link rel="import" href="../polymer/polymer.html">
+<polymer-element name="simple-card">
+  <template>
+    <link rel="stylesheet" href="simple-card.css" />
+    <div class="container" layout vertical center on-tap="{{toggleZoom}}">
+      <content select="picture-frame"></content>
+      <content select=".name"></content>
+      <content select=".description"></content>
+    </div>
+  </template>
+  <script>
+  Polymer('simple-card', {
+    toggleZoom: function() {
+      this.classList.toggle('zoom');
+    }
+  });
+  </script>
+</polymer-element>
+
+<!-- Content select -->
+<!-- Layout -->
+<!-- Composition -->
+<!-- Event binding -->

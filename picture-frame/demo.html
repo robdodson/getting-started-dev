@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <title>picture-frame Demo</title>
+
+  <script src="../platform/platform.js"></script>
+  <link rel="import" href="../lorem-pixel/lorem-pixel.html">
+  <link rel="import" href="picture-frame.html">
+
+</head>
+<body unresolved>
+
+  <p>An `picture-frame` looks like this:</p>
+
+  <picture-frame border>
+    <img src="http://lorempixel.com/100/100/nature">
+  </picture-frame>
+
+  <picture-frame border>
+    <lorem-pixel width="100" height="100" type="nature"></lorem-pixel>
+  </picture-frame>
+
+  <picture-frame round>
+    <lorem-pixel width="100" height="100" type="nature"></lorem-pixel>
+  </picture-frame>
+
+  <picture-frame border round>
+    <lorem-pixel width="100" height="100" type="nature"></lorem-pixel>
+  </picture-frame>
+
+  <picture-frame shadow="top">
+    <lorem-pixel width="100" height="100" type="nature"></lorem-pixel>
+  </picture-frame>
+
+  <picture-frame round shadow="bottom">
+    <lorem-pixel width="100" height="100" type="nature"></lorem-pixel>
+  </picture-frame>
+
+</body>
+</html>

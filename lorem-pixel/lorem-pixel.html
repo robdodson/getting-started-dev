@@ -1,0 +1,27 @@
+<link rel="import" href="../polymer/polymer.html">
+<polymer-element name="lorem-pixel" attributes="width height type">
+  <template>
+    <img id="image" src="http://lorempixel.com/{{width}}/{{height}}/{{type}}">
+  </template>
+  <script>
+    Polymer('lorem-pixel', {
+      width: 100,
+      height: 100,
+      type: 'nature',
+      ready: function() {
+        // Make sure you don't include the dash in the url!
+        // var url = 'http://lorempixel.com'
+        // url += '/' + this.width;
+        // url += '/' + this.height;
+        // url += '/' + this.type;
+        // this.$.image.src = url;
+      }
+    });
+  </script>
+</polymer-element>
+
+<!-- Creating your first element (put lorem pixel src into img) -->
+<!-- Default values -->
+<!-- Lifecycle callback -->
+<!-- Bindings -->
+<!-- Automatic node finding -->

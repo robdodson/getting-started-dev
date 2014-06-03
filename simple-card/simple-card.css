@@ -1,0 +1,28 @@
+:host {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  border-bottom-width: 2px;
+  border-top-width: 0;
+  vertical-align: top;
+  min-height: 250px;
+  max-width: 290px;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: transform .2s ease-in-out;
+}
+
+:host(.zoom) {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.container {
+  padding: 25px;
+}
+
+::content[select=".description"] * {
+  font-size: 13px;
+}

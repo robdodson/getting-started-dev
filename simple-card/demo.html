@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <title>simple-card Demo</title>
+
+  <script src="../platform/platform.js"></script>
+  <link rel="import" href="simple-card.html">
+  <link rel="import" href="../lorem-pixel/lorem-pixel.html">
+  <link rel="import" href="../picture-frame/picture-frame.html">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+  <style>
+  body {
+    background: #E5E5E5;
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+  }
+  </style>
+</head>
+<body unresolved>
+
+  <p>An `simple-card` looks like this:</p>
+
+  <simple-card>
+    <picture-frame round>
+      <lorem-pixel width="80" height="80" type="food">
+      </lorem-pixel>
+    </picture-frame>
+    <h3 class="name">Daily Special</h3>
+    <p class="description">
+      Bacon ipsum dolor sit amet rump short loin pastrami cow fatback pork chop strip steak pork belly jowl prosciutto tenderloin kielbasa.
+    </p>
+  </simple-card>
+
+  <simple-card>
+    <picture-frame round>
+      <img width="80" height="80" src="http://avatars.io/twitter/ebidel?size=large">
+    </picture-frame>
+    <h3 class="name">Eric Bidelman</h3>
+    <p class="description">
+      Eric is a Staff Developer Programs Engineer on the Google Chrome team. His current passion is web components and Polymer.
+    </p>
+  </simple-card>
+
+  <simple-card>
+    <picture-frame round>
+      <img width="80" height="80" src="http://cl.ly/image/1T143a0Z170J/diamond.png">
+    </picture-frame>
+    <h3 class="name">Premium Plan</h3>
+    <p class="description">
+      Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base
+    </p>
+  </simple-card>
+
+</body>
+</html>
